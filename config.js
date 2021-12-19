@@ -10,13 +10,13 @@ module.exports = {
     },
     //SSL сертификаты для сервера навыка. Можно использовать как самоподписанные так и sslforfree.com или let's encript
     ssl: {
-	crt: '/path/to/ssl.crt',		//путь до файла с SSL сертификатом
-	key: '/path/to/ssl.key',		//путь до файла с ключом от SSL сертификата
+	crt: './ssl/fullchain.pem',		//пpwdуть до файла с SSL сертификатом
+	key: './ssl/privkey.pem',		//путь до файла с ключом от SSL сертификата
     },
     port: 8443,		//порт, на котором будут ожидаться запросы от яндекс диалогов
     //логин + пароль для авторизации в yandex (подробности в документации)
-    login: '',
-    pass: '',
+    login: 'dmF2YW50',
+    pass: 'UG9kNTM3Z2VO',
     //или куки для авторизации в yandex (подробности в документации)
     cookie: '',
     speaker: 'REPLACE-BY-YANDEX-STATION-ID',	//id устройства яндекс.станция, взять на https://iot.quasar.yandex.ru/m/user/devices (example: ,{"id":"2077cfa6-2365-4ed4-97d5-4b46895762af","name":"Яндекс Станция","type":"devices.types.smart_speaker.yandex.station","capabilities":[],"properties":[],"groups":[],"skill_id":"Q"}]})
@@ -30,7 +30,7 @@ module.exports = {
     intents: {		//интенты, навык будет реагировать на них
 	help: ['справка', 'помощь', 'что ты умеешь'],
 	enable: ['включи','включить'],
-	disable: ['выключи','выключить']
+	disable: ['выключи','выключить'],
 	timers: ['таймер'],
 	action_add: ['добавить','добавь'],
 	action_del: ['удалить','удали'],

@@ -1,0 +1,18 @@
+[19.12.2021 17:26:17] [INFO] Start timers process. Timers total: 0
+[19.12.2021 17:31:17] [INFO] Start timers process. Timers total: 0
+[19.12.2021 17:35:39] [ERROR] json parse failed SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at reply (/home/vavan/Development/alice-command-skill/index.js:974:15)
+    at IncomingMessage.<anonymous> (/home/vavan/Development/alice-command-skill/index.js:1050:9)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[19.12.2021 17:35:39] [DEBUG] reply[unknown]: {
+  version: '1.0',
+  response: {
+    text: 'Что-то у меня пошло не так...',
+    tts: 'Что-то у меня пошло не так.',
+    end_session: true
+  }
+}
+[19.12.2021 17:36:17] [INFO] Start timers process. Timers total: 0
